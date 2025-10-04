@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Paname RP — Emergency Hamburg</title>
+  <style>
+    *{box-sizing:border-box;margin:0;padding:0}
+    html,body{height:100%}
+    body{
+      font-family:Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+      color:#fff;
+      background: url('background.png') center/cover no-repeat fixed;
+      display:flex;align-items:center;justify-content:center;
+      padding:24px;
+    }
+    .card{
+      width:100%;max-width:980px;background:linear-gradient(180deg, rgba(0,0,0,0.45), rgba(0,0,0,0.55));
+      border-radius:18px;padding:36px;box-shadow:0 10px 30px rgba(0,0,0,0.45);
+      backdrop-filter: blur(6px);
+    }
+    header{display:flex;align-items:center;gap:18px;margin-bottom:18px}
+    .logo{width:96px;height:96px;border-radius:12px;background:rgba(255,255,255,0.06);display:flex;align-items:center;justify-content:center;font-weight:700;font-size:20px;}
+    h1{font-size:34px;letter-spacing:3px}
+    p.lead{margin-top:6px;opacity:0.9}
+    .actions{display:flex;gap:12px;margin-top:18px}
+    .btn{padding:10px 16px;border-radius:10px;text-decoration:none;font-weight:600;display:inline-flex;align-items:center;gap:8px}
+    .btn-primary{background:#e94f2b;color:#fff}
+    .btn-ghost{background:rgba(255,255,255,0.08);color:#fff}
+    .grid{display:grid;grid-template-columns:1fr 380px;gap:22px;margin-top:22px}
+    .about{line-height:1.6}
+    form{background:rgba(255,255,255,0.03);padding:16px;border-radius:12px}
+    label{display:block;font-size:13px;margin-bottom:6px;opacity:0.95}
+    input[type=text],input[type=email],textarea{width:100%;padding:10px;border-radius:8px;border:1px solid rgba(255,255,255,0.06);background:transparent;color:#fff;margin-bottom:12px}
+    textarea{min-height:120px;resize:vertical}
+    .muted{font-size:13px;opacity:0.8}
+    .footer{margin-top:16px;text-align:center;font-size:13px;opacity:0.9}
+    @media(max-width:860px){.grid{grid-template-columns:1fr}header{flex-direction:row}}
+  </style>
+</head>
+<body>
+  <div class="card">
+    <header>
+      <div class="logo">PAN</div>
+      <div>
+        <h1>Paname RP</h1>
+        <p class="lead">Serveur privé Emergency Hamburg — Roleplay francophone. Rejoins-nous sur Discord pour jouer et découvrir la ville !</p>
+        <div class="actions">
+          <a class="btn btn-primary" href="https://discord.gg/eUcugVfPZQ" target="_blank" rel="noopener">Rejoindre Discord</a>
+          <a class="btn btn-ghost" href="https://roblox.com/" target="_blank" rel="noopener">Emergency Hamburg</a>
+        </div>
+      </div>
+    </header>
+
+    <div class="grid">
+      <div class="about">
+        <h2>À propos</h2>
+        <p>Paname RP est un serveur RP privé pour le jeu <strong>Emergency Hamburg</strong>. Nous proposons des scénarios immersifs, une communauté active et des événements réguliers. Que tu sois vétéran du RP ou nouveau, tu es le bienvenu.</p>
+        <ul style="margin-top:12px;line-height:1.6;">
+          <li>💬 Discord actif</li>
+          <li>🎯 Règles claires et fairplay</li>
+          <li>🚑 Missions autonomes & événements</li>
+        </ul>
+      </div>
+
+      <aside>
+        <h3>Contact — Envoyer un message</h3>
+
+        <!-- Formulaire relié à Formspree -->
+        <form id="contactForm" action="https://formspree.io/f/xvgwqowj" method="POST">
+          <label for="name">Nom</label>
+          <input id="name" name="name" type="text" placeholder="Ton pseudo" required />
+
+          <label for="email">Email</label>
+          <input id="email" name="email" type="email" placeholder="ton@email.com" required />
+
+          <label for="message">Message</label>
+          <textarea id="message" name="message" placeholder="Écris ton message..." required></textarea>
+
+          <button class="btn btn-primary" type="submit">Envoyer</button>
+          <p class="muted">Les messages seront envoyés via Formspree sur ton email.</p>
+        </form>
+      </aside>
+    </div>
+
+    <div class="footer">© Paname RP — Emergency Hamburg • <small>Crée par toi &amp; généré par ChatGPT</small></div>
+  </div>
+</body>
+</html>
